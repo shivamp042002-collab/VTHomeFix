@@ -13,7 +13,7 @@ ALLOWED_HOSTS = [
     '.vercel.app',
     'vthomefix.com',
     'www.vthomefix.com',
-    '*',  # Remove in production after setting your domain
+    
 ]
 
 INSTALLED_APPS = [
@@ -103,7 +103,7 @@ CSRF_TRUSTED_ORIGINS = [
     'https://*.render.com',
 ]
 
-# Email notifications (optional — configure later)
+# Email notifications 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
@@ -112,7 +112,7 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_USER', '')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS', '')
 DEFAULT_FROM_EMAIL = 'VTHomeFix <Vinaytiwari59352@gmail.com>'
 
-# Security headers (enable in production)
+# Security headers 
 if not DEBUG:
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_CONTENT_TYPE_NOSNIFF = True
