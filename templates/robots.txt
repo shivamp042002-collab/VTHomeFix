@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /django-admin/
+Disallow: /api/
+
+Sitemap: https://vthomefix.com/sitemap.xml
