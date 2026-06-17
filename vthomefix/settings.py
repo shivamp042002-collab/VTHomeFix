@@ -7,13 +7,11 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'change-this-in-production-vtho
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
-    'localhost', '127.0.0.1',
+    'vthomefix.in',
+    'www.vthomefix.in',
     '.railway.app',
-    '.render.com',
-    '.vercel.app',
-    'vthomefix.com',
-    'www.vthomefix.com',
-    
+    'localhost',
+    '127.0.0.1',
 ]
 
 INSTALLED_APPS = [
@@ -97,10 +95,8 @@ CORS_ALLOW_CREDENTIALS = True
 
 # CSRF
 CSRF_TRUSTED_ORIGINS = [
-    'https://vthomefix.com',
-    'https://www.vthomefix.com',
-    'https://*.railway.app',
-    'https://*.render.com',
+    'https://vthomefix.in',
+    'https://www.vthomefix.in',
 ]
 
 # Email notifications 
