@@ -11,11 +11,12 @@ class Booking(models.Model):
         ('cancelled','Cancelled'),
     ]
     SERVICE_CHOICES = [
-        ('painting',   'Painting'),
-        ('carpentry',  'Carpentry'),
-        ('tiles',      'Tiles Fitting'),
-        ('electrical', 'Electrical'),
-        ('multiple',   'Multiple Services'),
+        ('painting',    'Painting'),
+        ('carpentry',   'Carpentry'),
+        ('tiles',       'Tiles Fitting'),
+        ('electrical',  'Electrical'),
+        ('pop_ceiling', 'POP Ceiling'),
+        ('multiple',    'Multiple Services'),
     ]
 
     name        = models.CharField(max_length=120)
@@ -65,11 +66,12 @@ class Enquiry(models.Model):
 
 class PortfolioPhoto(models.Model):
     CATEGORY_CHOICES = [
-        ('painting',   'Painting'),
-        ('carpentry',  'Carpentry'),
-        ('tiles',      'Tiles Fitting'),
-        ('electrical', 'Electrical'),
-        ('other',      'Other'),
+        ('painting',    'Painting'),
+        ('carpentry',   'Carpentry'),
+        ('tiles',       'Tiles Fitting'),
+        ('electrical',  'Electrical'),
+        ('pop_ceiling', 'POP Ceiling'),
+        ('other',       'Other'),
     ]
 
     title      = models.CharField(max_length=160)
@@ -90,6 +92,24 @@ class PortfolioPhoto(models.Model):
         return f"{self.title} ({self.category})"
 
 
+class CustomerReview(models.Model):
+    name        = models.CharField(max_length=120)
+    location    = models.CharField(max_length=100, blank=True, help_text="e.g. Vasai West")
+    rating      = models.PositiveSmallIntegerField(default=5, help_text="1 to 5 stars")
+    review_text = models.TextField()
+    service     = models.CharField(max_length=80, blank=True)
+    is_approved = models.BooleanField(default=False, help_text="Only approved reviews show on the site")
+    created_at  = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = 'Customer Review'
+        verbose_name_plural = 'Customer Reviews'
+
+    def __str__(self):
+        return f"{self.name} — {self.rating}★ ({self.created_at.strftime('%d %b %Y')})"
+
+
 class WorkerApplication(models.Model):
     STATUS_CHOICES = [
         ('new',       'New'),
@@ -99,12 +119,13 @@ class WorkerApplication(models.Model):
         ('rejected',  'Not Suitable'),
     ]
     TRADE_CHOICES = [
-        ('painting',   'Painting'),
-        ('carpentry',  'Carpentry'),
-        ('tiles',      'Tiles Fitting'),
-        ('electrical', 'Electrical'),
-        ('plumbing',   'Plumbing'),
-        ('other',      'Other'),
+        ('painting',    'Painting'),
+        ('carpentry',   'Carpentry'),
+        ('tiles',       'Tiles Fitting'),
+        ('electrical',  'Electrical'),
+        ('pop_ceiling', 'POP Ceiling'),
+        ('plumbing',    'Plumbing'),
+        ('other',       'Other'),
     ]
 
     name          = models.CharField(max_length=120)

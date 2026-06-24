@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.html import format_html
-from .models import Booking, Enquiry, PortfolioPhoto, SiteVisit, WorkerApplication
+from .models import Booking, Enquiry, PortfolioPhoto, SiteVisit, WorkerApplication, CustomerReview
 
 
 @admin.register(Booking)
@@ -84,6 +84,32 @@ class PortfolioPhotoAdmin(admin.ModelAdmin):
             return format_html('<img src="{}" style="width:60px;height:45px;object-fit:cover;border-radius:4px;" />', obj.image.url)
         return '—'
     thumb.short_description = 'Preview'
+
+
+@admin.register(CustomerReview)
+class CustomerReviewAdmin(admin.ModelAdmin):
+    list_display  = ('name', 'stars_display', 'location', 'service', 'is_approved', 'created_at')
+    list_filter   = ('is_approved', 'rating', 'created_at')
+    list_editable = ('is_approved',)
+    search_fields = ('name', 'review_text', 'location')
+    readonly_fields = ('created_at',)
+    ordering      = ('-created_at',)
+
+    fieldsets = (
+        ('Reviewer', {
+            'fields': ('name', 'location', 'service')
+        }),
+        ('Review', {
+            'fields': ('rating', 'review_text')
+        }),
+        ('Moderation', {
+            'fields': ('is_approved', 'created_at')
+        }),
+    )
+
+    def stars_display(self, obj):
+        return '★' * obj.rating + '☆' * (5 - obj.rating)
+    stars_display.short_description = 'Rating'
 
 
 @admin.register(WorkerApplication)

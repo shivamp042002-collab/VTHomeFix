@@ -6,15 +6,15 @@
   <!-- SEO Meta Tags -->
   <title>VTHomeFix – Painter, Electrician, Carpenter &amp; Contractor Near You | Vasai, Virar, Borivali</title>
   <meta name="description" content="VTHomeFix — Painter, electrician, carpenter & contractor near you in Vasai, Virar, Nalasopara, Mira Road, Bhayandar, Borivali. 20+ years experience. Free quote on call 9503833197." />
-  <meta name="keywords" content="VTHomeFix, painter near me, electrician near me, carpenter near me, contractor near me, home fix near me, home repair near me, tiles fitting near me, handyman near me, painting services vasai, painting services virar, carpenter vasai, carpenter virar, tiles fitting mumbai, electrician vasai, electrician virar, contractor vasai, contractor virar, home renovation vasai virar, painter borivali, electrician borivali, carpenter borivali, painter mira road, painter bhayandar, painter nalasopara, home services western line mumbai, best painter near me, Vinay Tiwari painter" />
+  <meta name="keywords" content="VTHomeFix, painter near me, electrician near me, carpenter near me, contractor near me, home fix near me, home repair near me, tiles fitting near me, handyman near me, POP false ceiling near me, false ceiling contractor near me, gypsum ceiling near me, POP ceiling design, painting services vasai, painting services virar, carpenter vasai, carpenter virar, tiles fitting mumbai, electrician vasai, electrician virar, contractor vasai, contractor virar, POP ceiling vasai, POP ceiling virar, false ceiling mumbai, home renovation vasai virar, painter borivali, electrician borivali, carpenter borivali, painter mira road, painter bhayandar, painter nalasopara, home services western line mumbai, best painter near me, Vinay Tiwari painter" />
   <meta name="author" content="VTHomeFix" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://vthomefix.com/" />
+  <link rel="canonical" href="https://www.vthomefix.in/" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VTHomeFix – Home Services Vasai, Virar, Borivali, Mumbai" />
   <meta property="og:description" content="Professional painting, carpentry, tiles fitting and electrical services. 20+ years experience. Serving Vasai, Virar, Nalasopara, Mira Road, Bhayandar and Borivali." />
-  <meta property="og:url" content="https://vthomefix.com/" />
+  <meta property="og:url" content="https://www.vthomefix.in/" />
   <!-- Schema Markup for Local SEO -->
   <script type="application/ld+json">
   {
@@ -22,11 +22,11 @@
     "@type": "HomeAndConstructionBusiness",
     "name": "VTHomeFix",
     "alternateName": "VTHomeFix by Vinay Tiwari",
-    "image": "https://vthomefix.com/static/logo.png",
+    "image": "https://www.vthomefix.in/static/logo.png",
     "description": "VTHomeFix is your trusted painter, electrician, carpenter and contractor near Vasai, Virar, Nalasopara, Mira Road, Bhayandar and Borivali, Mumbai. Offering painting, carpentry, tiles fitting and electrical services with 20+ years of experience.",
     "telephone": "+919503833197",
     "email": "Vinaytiwari59352@gmail.com",
-    "url": "https://vthomefix.com/",
+    "url": "https://www.vthomefix.in/",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Vasai",
@@ -71,7 +71,8 @@
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Painting Services", "areaServed": "Vasai, Virar, Mumbai"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Carpentry", "areaServed": "Vasai, Virar, Mumbai"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tiles Fitting", "areaServed": "Vasai, Virar, Mumbai"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Work", "areaServed": "Vasai, Virar, Mumbai"}}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Work", "areaServed": "Vasai, Virar, Mumbai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "POP False Ceiling", "areaServed": "Vasai, Virar, Mumbai"}}
       ]
     }
   }
@@ -99,8 +100,8 @@
       --transition: 0.25s ease;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: var(--font-body); color: var(--text); background: var(--white); line-height: 1.6; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: var(--font-body); color: var(--text); background: var(--white); line-height: 1.6; overflow-x: hidden; max-width: 100vw; }
     img { max-width: 100%; display: block; }
     a { text-decoration: none; color: inherit; }
 
@@ -138,10 +139,17 @@
     .nav-inner { max-width: 1140px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
     .nav-logo { display: flex; align-items: center; gap: 12px; }
     .logo-mark {
-      width: 42px; height: 42px; background: linear-gradient(135deg, var(--sky), var(--accent));
-      border-radius: 10px; display: flex; align-items: center; justify-content: center;
-      font-weight: 900; font-size: 1.1rem; color: white; font-family: var(--font-display);
-      letter-spacing: -1px; flex-shrink: 0;
+      width: 44px; height: 44px; background: linear-gradient(135deg, var(--sky), var(--accent));
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 1.15rem; color: white; font-family: var(--font-display);
+      letter-spacing: -1px; flex-shrink: 0; box-shadow: 0 4px 14px rgba(46,134,222,0.4);
+      position: relative;
+    }
+    .logo-mark::after {
+      content: '🏠'; position: absolute; bottom: -4px; right: -4px;
+      font-size: 0.85rem; background: var(--navy); border-radius: 50%;
+      width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;
+      border: 2px solid var(--navy);
     }
     .logo-text { color: white; }
     .logo-name { font-weight: 700; font-size: 1.05rem; letter-spacing: 0.3px; }
@@ -159,62 +167,104 @@
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
     .hamburger span { width: 24px; height: 2px; background: white; border-radius: 2px; transition: all var(--transition); }
 
-    /* ===== HERO ===== */
-    .hero {
-      background: linear-gradient(135deg, var(--navy) 0%, #0d2b52 55%, #162f5c 100%);
-      padding: 80px 24px 90px;
-      position: relative; overflow: hidden;
+    /* ===== HERO IMAGE CAROUSEL ===== */
+    .hero-banner {
+      position: relative; width: 100%; height: 56vh; min-height: 380px; max-height: 620px;
+      overflow: hidden; background: var(--navy);
     }
-    .hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    .hero-slide {
+      position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease-in-out;
+      background-size: cover; background-position: center;
     }
-    .hero-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; }
-    .hero-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
-    .hero-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 2s infinite; }
+    .hero-slide.active { opacity: 1; }
+    .hero-banner::after {
+      content: ''; position: absolute; inset: 0; z-index: 2;
+      background: linear-gradient(180deg, rgba(11,31,58,0.55) 0%, rgba(11,31,58,0.75) 55%, rgba(11,31,58,0.96) 100%);
+    }
+    .hero-banner-content {
+      position: absolute; inset: 0; z-index: 3;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 24px;
+    }
+    .hero-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; justify-content: center; }
+    .hero-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 2s infinite; flex-shrink: 0; }
     @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.3)} }
-    .hero-eyebrow span { color: rgba(255,255,255,0.6); font-size: 0.82rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
-    .hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.4rem); color: white; line-height: 1.15; margin-bottom: 20px; }
-    .hero h1 em { font-style: normal; color: var(--accent); }
-    .hero-desc { color: rgba(255,255,255,0.7); font-size: 1.05rem; margin-bottom: 32px; max-width: 460px; }
-    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-    .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .stat-card {
-      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
-      border-radius: var(--radius); padding: 24px 20px; text-align: center;
-      backdrop-filter: blur(8px);
+    .hero-eyebrow span { color: rgba(255,255,255,0.75); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+    .hero-banner h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 5.5vw, 3.6rem); color: white; line-height: 1.15; margin-bottom: 16px; text-shadow: 0 2px 20px rgba(0,0,0,0.3); max-width: 800px; }
+    .hero-banner h1 em { font-style: normal; color: var(--accent); }
+    .hero-banner-desc { color: rgba(255,255,255,0.85); font-size: clamp(0.92rem, 2vw, 1.1rem); margin-bottom: 28px; max-width: 600px; }
+    .hero-banner-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-bottom: 24px; }
+    .hero-dots { display: flex; gap: 8px; position: absolute; bottom: 20px; left: 0; right: 0; justify-content: center; z-index: 4; }
+    .hero-dot-btn { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.4); border: none; cursor: pointer; transition: all 0.3s; padding: 0; }
+    .hero-dot-btn.active { background: var(--accent); width: 24px; border-radius: 4px; }
+    .trust-row-banner { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+    /* ===== QUICK SERVICES STRIP ===== */
+    .quick-services { background: var(--white); border-bottom: 1px solid var(--lightgray); position: sticky; top: 68px; z-index: 500; box-shadow: 0 2px 12px rgba(11,31,58,0.06); }
+    .quick-services-inner { display: flex; gap: 8px; padding: 12px 24px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .quick-services-inner::-webkit-scrollbar { display: none; }
+    .quick-svc-btn {
+      display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+      background: var(--offwhite); border: 1.5px solid var(--lightgray); border-radius: 24px;
+      padding: 9px 18px; font-family: inherit; font-size: 0.85rem; font-weight: 700; color: var(--navy);
+      cursor: pointer; transition: all var(--transition); white-space: nowrap;
     }
-    .stat-num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--accent); line-height: 1; }
-    .stat-label { color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-top: 6px; letter-spacing: 0.5px; }
-    .trust-row { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px; }
+    .quick-svc-btn:hover { background: var(--blue); color: white; border-color: var(--blue); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(27,79,158,0.25); }
+    .qs-icon { font-size: 1.05rem; }
+
+    /* ===== STATS STRIP (below banner) ===== */
+    .stats-strip { background: var(--navy); padding: 28px 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .stats-strip-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .stat-card { text-align: center; padding: 10px; }
+    .stat-num { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; color: var(--accent); line-height: 1; }
+    .stat-label { color: rgba(255,255,255,0.6); font-size: 0.78rem; margin-top: 6px; letter-spacing: 0.3px; }
 
     /* ===== SERVICES ===== */
     .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 48px; }
     .service-card {
       background: var(--white); border: 1px solid var(--lightgray); border-radius: var(--radius-lg);
-      padding: 32px 28px; transition: all var(--transition); cursor: default;
+      padding: 32px 28px; transition: all var(--transition); cursor: pointer;
       position: relative; overflow: hidden;
     }
     .service-card::before {
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
       background: linear-gradient(90deg, var(--sky), var(--accent)); opacity: 0; transition: opacity var(--transition);
     }
-    .service-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: transparent; }
+    .service-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-6px); border-color: transparent; }
     .service-card:hover::before { opacity: 1; }
-    .svc-icon { width: 56px; height: 56px; border-radius: 14px; background: linear-gradient(135deg, var(--sky), var(--blue)); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 20px; }
+    .service-card:active { transform: translateY(-2px); }
+    .svc-icon { width: 56px; height: 56px; border-radius: 14px; background: linear-gradient(135deg, var(--sky), var(--blue)); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 20px; transition: transform var(--transition); }
+    .service-card:hover .svc-icon { transform: scale(1.08) rotate(-3deg); }
     .svc-title { font-family: var(--font-display); font-size: 1.2rem; color: var(--navy); margin-bottom: 10px; font-weight: 700; }
     .svc-desc { color: var(--gray); font-size: 0.9rem; line-height: 1.65; }
     .svc-list { margin-top: 14px; list-style: none; }
     .svc-list li { color: var(--gray); font-size: 0.85rem; padding: 3px 0; display: flex; align-items: center; gap: 7px; }
     .svc-list li::before { content: '✓'; color: var(--sky); font-weight: 700; font-size: 0.8rem; }
+    .svc-cta-hint {
+      margin-top: 18px; display: flex; align-items: center; gap: 6px;
+      color: var(--sky); font-size: 0.82rem; font-weight: 700;
+      opacity: 0; transform: translateX(-6px); transition: all var(--transition);
+    }
+    .service-card:hover .svc-cta-hint { opacity: 1; transform: translateX(0); }
 
     /* ===== WHY US ===== */
     .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
     .why-visual {
-      background: linear-gradient(135deg, var(--navy), var(--blue));
-      border-radius: var(--radius-lg); padding: 48px 40px; color: white; text-align: center;
+      position: relative; overflow: hidden;
+      background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80&auto=format&fit=crop');
+      background-size: cover; background-position: center;
+      border-radius: var(--radius-lg); padding: 56px 40px; color: white; text-align: center;
+      box-shadow: 0 16px 48px rgba(11,31,58,0.25);
     }
-    .why-icon-big { font-size: 5rem; margin-bottom: 20px; }
+    .why-visual::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(160deg, rgba(11,31,58,0.92) 0%, rgba(27,79,158,0.88) 100%);
+      z-index: 1;
+    }
+    .why-visual > * { position: relative; z-index: 2; }
+    .why-icon-big { font-size: 4.2rem; margin-bottom: 16px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)); }
+    .why-badge-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .why-badge { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.18); border-radius: 14px; padding: 20px; backdrop-filter: blur(4px); }
     .why-list { list-style: none; }
     .why-list li { display: flex; align-items: flex-start; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--lightgray); }
     .why-list li:last-child { border-bottom: none; }
@@ -275,6 +325,12 @@
     .form-success .checkmark { font-size: 3rem; margin-bottom: 12px; }
     .form-success h3 { color: var(--success); font-family: var(--font-display); font-size: 1.4rem; }
     .form-success p { color: var(--gray); margin-top: 8px; }
+
+    /* ===== STAR PICKER (review form) ===== */
+    .star-picker { display: flex; gap: 6px; font-size: 1.8rem; }
+    .star-pick { color: var(--lightgray); cursor: pointer; transition: color var(--transition); user-select: none; }
+    .star-pick.active { color: var(--accent); }
+    .live-review-card { background: var(--white); border: 1px solid var(--lightgray); border-radius: var(--radius); padding: 20px; margin-bottom: 14px; }
 
     /* ===== BOOKING PAGE ===== */
     .booking-wrap { max-width: 720px; margin: 0 auto; }
@@ -407,15 +463,39 @@
     .footer-bottom a { color: rgba(255,255,255,0.5); }
     .footer-bottom a:hover { color: white; }
 
-    /* ===== PLACEHOLDER IMAGES ===== */
-    .img-placeholder {
-      background: linear-gradient(135deg, #e8edf4, #d0daea);
-      border-radius: var(--radius); display: flex; align-items: center; justify-content: center;
-      color: var(--gray); font-size: 2.5rem; position: relative; overflow: hidden;
+    /* ===== WORK SHOWCASE ===== */
+    .work-showcase-section {
+      position: relative;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(46,134,222,0.06) 0%, transparent 45%),
+        radial-gradient(circle at 90% 15%, rgba(244,166,29,0.08) 0%, transparent 40%),
+        radial-gradient(circle at 50% 90%, rgba(27,79,158,0.06) 0%, transparent 50%),
+        var(--white);
     }
-    .img-placeholder::after { content: attr(data-label); position: absolute; bottom: 12px; left: 0; right: 0; text-align: center; font-size: 0.75rem; color: var(--gray); font-family: var(--font-body); font-weight: 600; }
     .work-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 40px; }
-    .work-item { border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/3; }
+    .work-item {
+      border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/3; position: relative;
+      background-size: cover; background-position: center;
+      box-shadow: 0 6px 20px rgba(11,31,58,0.1); transition: all var(--transition);
+    }
+    .work-item:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 12px 32px rgba(11,31,58,0.18); }
+    .work-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .work-item-tag {
+      position: absolute; bottom: 0; left: 0; right: 0; padding: 14px 16px 12px;
+      background: linear-gradient(180deg, transparent, rgba(11,31,58,0.85));
+      color: white; font-size: 0.82rem; font-weight: 700;
+    }
+
+    /* ===== UPLOAD / SHARE WORK PHOTO CTA ===== */
+    .upload-cta-card {
+      max-width: 620px; margin: 0 auto; text-align: center;
+      background: linear-gradient(135deg, var(--white), var(--offwhite));
+      border: 2px dashed var(--sky); border-radius: var(--radius-lg);
+      padding: 44px 36px;
+    }
+    .upload-cta-icon { font-size: 2.8rem; margin-bottom: 12px; }
+    .upload-cta-card h3 { font-family: var(--font-display); color: var(--navy); font-size: 1.4rem; margin-bottom: 10px; }
+    .upload-cta-card p { color: var(--gray); font-size: 0.92rem; margin-bottom: 22px; max-width: 460px; margin-left: auto; margin-right: auto; }
 
     /* ===== WHATSAPP FLOAT ===== */
     #whatsapp-btn {
@@ -436,29 +516,84 @@
     .page-hero p { color: rgba(255,255,255,0.7); font-size: 1rem; }
 
     /* ===== RESPONSIVE ===== */
+
+    /* Tablet & small laptop */
     @media (max-width: 900px) {
-      .hero-inner { grid-template-columns: 1fr; }
-      .hero-stats { margin-top: 40px; }
       .why-grid, .contact-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .work-grid { grid-template-columns: 1fr 1fr; }
       .stats-grid { grid-template-columns: 1fr 1fr; }
+      .stats-strip-inner { grid-template-columns: repeat(4, 1fr); gap: 8px; }
+      .hero-banner { height: 60vh; min-height: 420px; }
     }
+
+    /* Large phones / small tablets */
     @media (max-width: 640px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
-      .nav-links.mobile-open { display: flex; flex-direction: column; position: fixed; top: 68px; left: 0; right: 0; background: var(--navy); padding: 20px; gap: 4px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .nav-links.mobile-open {
+        display: flex; flex-direction: column; position: fixed; top: 68px; left: 0; right: 0;
+        background: var(--navy); padding: 20px; gap: 4px; border-bottom: 1px solid rgba(255,255,255,0.08);
+        max-height: calc(100vh - 68px); overflow-y: auto; z-index: 999;
+      }
+      .nav-links.mobile-open a, .nav-links.mobile-open button { text-align: left; width: 100%; padding: 12px 16px; }
+
       .form-row { grid-template-columns: 1fr; }
       .service-select-grid { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 32px; }
       .footer-bottom { flex-direction: column; text-align: center; }
-      .section { padding: 56px 0; }
-      .booking-steps { overflow-x: auto; }
-      #chatbox { width: calc(100vw - 32px); right: 16px; }
+      .section { padding: 48px 0; }
+      .booking-steps { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
+      .booking-card { padding: 28px 20px; }
+      #chatbox { width: calc(100vw - 24px); right: 12px; left: 12px; max-height: 70vh; }
+      #chat-toggle { width: 52px; height: 52px; font-size: 1.3rem; bottom: 20px; right: 20px; }
+      #whatsapp-btn { bottom: 84px; right: 20px; width: 46px; height: 46px; }
+      .work-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+      .hero-banner { height: 64vh; min-height: 460px; }
+      .hero-banner-content { padding: 16px; }
+      .hero-banner-actions { flex-direction: column; width: 100%; max-width: 280px; }
+      .hero-banner-actions .btn { width: 100%; justify-content: center; }
+      .trust-row-banner { gap: 8px; }
+      .trust-row-banner .tag { font-size: 0.72rem; padding: 4px 10px; }
+      .stats-strip-inner { grid-template-columns: repeat(2, 1fr); gap: 16px 8px; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .stat-box { padding: 16px; }
+      .areas-wrap { gap: 8px; }
+      .area-pill { padding: 8px 14px; font-size: 0.8rem; }
+      .admin-tabs { flex-wrap: wrap; }
+      .cta-actions { flex-direction: column; width: 100%; }
+      .cta-actions .btn { width: 100%; justify-content: center; }
+      .photo-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* Small phones */
+    @media (max-width: 400px) {
+      .container { padding: 0 16px; }
+      .hero-banner { height: 70vh; min-height: 480px; }
+      .hero-banner h1 { font-size: 1.7rem; }
+      .hero-banner-desc { font-size: 0.85rem; }
+      .stats-strip-inner { grid-template-columns: repeat(2, 1fr); }
+      .stat-num { font-size: 1.4rem; }
       .work-grid { grid-template-columns: 1fr; }
+      .service-select-grid { grid-template-columns: 1fr; }
+      .section-title { font-size: 1.5rem; }
+      .nav-logo .logo-sub { display: none; }
+      .booking-card { padding: 20px 14px; }
+      .form-card, .contact-info-card { padding: 28px 22px; }
+    }
+
+    /* Very small / old devices */
+    @media (max-width: 340px) {
+      .hero-banner-actions .btn { font-size: 0.85rem; padding: 11px 18px; }
+      .logo-mark { width: 36px; height: 36px; font-size: 0.95rem; }
     }
   </style>
 </head>
+
 <body>
 
 <!-- ===== NAVBAR ===== -->
@@ -477,6 +612,7 @@
       <button onclick="showPage('booking')" id="nav-booking">Book Now</button>
       <button onclick="showPage('contact')" id="nav-contact">Contact</button>
       <button onclick="showPage('join-team')" id="nav-join-team">Join Our Team</button>
+      <button onclick="showPage('reviews')" id="nav-reviews">Reviews</button>
       <a href="/django-admin/" id="nav-admin" style="opacity:0.5;font-size:0.8rem;padding:8px 16px;color:rgba(255,255,255,0.75);">Admin</a>
       <button class="btn nav-cta" onclick="showPage('booking')">📞 Get Quote</button>
     </div>
@@ -490,36 +626,59 @@
 <div id="page-home" class="page active">
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div>
-        <div class="hero-eyebrow">
-          <div class="hero-dot"></div>
-          <span>Vasai · Mumbai Western Line</span>
-        </div>
-        <h1>Your Home,<br /><em>Beautifully Done.</em></h1>
-        <p class="hero-desc">Trusted by hundreds of families across Vasai, Virar & Western Mumbai. Professional painting, carpentry, tiles & electrical — under one reliable name.</p>
-        <p style="color:rgba(255,255,255,0.5);font-size:0.85rem;margin-bottom:24px;margin-top:-16px;">Looking for a <strong style="color:rgba(255,255,255,0.7);">painter near me</strong>, <strong style="color:rgba(255,255,255,0.7);">electrician near me</strong>, or <strong style="color:rgba(255,255,255,0.7);">carpenter near me</strong>? VTHomeFix is your trusted local contractor.</p>
-        <div class="hero-actions">
-          <button class="btn btn-primary" onclick="showPage('booking')">📋 Book a Service</button>
-          <a class="btn btn-outline" href="tel:9503833197">📞 9503833197</a>
-        </div>
-        <div class="trust-row">
-          <span class="tag">✅ Licensed &amp; Insured</span>
-          <span class="tag">⏱ On-Time Guarantee</span>
-          <span class="tag">🏆 20+ Years Experience</span>
-        </div>
+  <section class="hero-banner" id="hero-banner">
+    <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1595514535215-9a2e3a5b3d3a?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1572297870735-1f0c6da8bf94?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1505798577917-a65157d3320a?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?w=1600&q=80&auto=format&fit=crop')"></div>
+
+    <div class="hero-banner-content">
+      <div class="hero-eyebrow">
+        <div class="hero-dot"></div>
+        <span>Vasai · Virar · Borivali · Western Line Mumbai</span>
       </div>
-      <div class="hero-stats">
-        <div class="stat-card"><div class="stat-num">20+</div><div class="stat-label">Years in Business</div></div>
-        <div class="stat-card"><div class="stat-num">500+</div><div class="stat-label">Projects Done</div></div>
-        <div class="stat-card"><div class="stat-num">4.9★</div><div class="stat-label">Customer Rating</div></div>
-        <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Core Services</div></div>
-        <div class="stat-card"><div class="stat-num">0</div><div class="stat-label">Complaints Pending</div></div>
-        <div class="stat-card"><div class="stat-num">100%</div><div class="stat-label">Satisfaction Rate</div></div>
+      <h1>Your Home,<br /><em>Beautifully Done.</em></h1>
+      <p class="hero-banner-desc">Painter, electrician, carpenter &amp; contractor near you — trusted by 500+ families across Vasai, Virar, Nalasopara, Mira Road, Bhayandar &amp; Borivali.</p>
+      <div class="hero-banner-actions">
+        <button class="btn btn-primary" onclick="showPage('booking')">📋 Book a Service</button>
+        <a class="btn btn-outline" href="tel:9503833197">📞 9503833197</a>
+        <a class="btn btn-outline" href="https://wa.me/919503833197?text=Hi%2C%20I%20need%20home%20services%20in%20Mumbai." target="_blank">💬 WhatsApp</a>
+      </div>
+      <div class="trust-row-banner">
+        <span class="tag">✅ Licensed &amp; Insured</span>
+        <span class="tag">⏱ On-Time Guarantee</span>
+        <span class="tag">🏆 20+ Years Experience</span>
       </div>
     </div>
+    <div class="hero-dots" id="hero-dots"></div>
   </section>
+
+  <!-- Stats Strip -->
+  <div class="stats-strip">
+    <div class="stats-strip-inner">
+      <div class="stat-card"><div class="stat-num">20+</div><div class="stat-label">Years Experience</div></div>
+      <div class="stat-card"><div class="stat-num">500+</div><div class="stat-label">Projects Done</div></div>
+      <div class="stat-card"><div class="stat-num">4.9★</div><div class="stat-label">Customer Rating</div></div>
+      <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">Core Services</div></div>
+    </div>
+  </div>
+
+  <!-- Quick Services Access Strip -->
+  <div class="quick-services">
+    <div class="container quick-services-inner">
+      <button class="quick-svc-btn" onclick="bookService('Painting')"><span class="qs-icon">🎨</span><span>Painting</span></button>
+      <button class="quick-svc-btn" onclick="bookService('Carpentry')"><span class="qs-icon">🪚</span><span>Carpentry</span></button>
+      <button class="quick-svc-btn" onclick="bookService('Tiles Fitting')"><span class="qs-icon">🪟</span><span>Tiles Fitting</span></button>
+      <button class="quick-svc-btn" onclick="bookService('Electrical')"><span class="qs-icon">⚡</span><span>Electrical</span></button>
+      <button class="quick-svc-btn" onclick="bookService('POP Ceiling')"><span class="qs-icon">🏛️</span><span>POP Ceiling</span></button>
+    </div>
+  </div>
 
   <!-- Services Quick -->
   <section class="section">
@@ -528,7 +687,7 @@
       <h2 class="section-title">Complete Home Care Services</h2>
       <p class="section-sub">One call, one professional. From a fresh coat of paint to full electrical rewiring — we handle it all.</p>
       <div class="services-grid">
-        <div class="service-card">
+        <div class="service-card" onclick="bookService('Painting')" style="cursor:pointer;">
           <div class="svc-icon">🎨</div>
           <div class="svc-title">Painting Services</div>
           <p class="svc-desc">Interior & exterior painting with premium quality paints. Clean work, no mess, no overspray.</p>
@@ -539,8 +698,9 @@
             <li>Waterproofing Coating</li>
             <li>Enamel & Wood Polish</li>
           </ul>
+          <div class="svc-cta-hint">Book this service →</div>
         </div>
-        <div class="service-card">
+        <div class="service-card" onclick="bookService('Carpentry')" style="cursor:pointer;">
           <div class="svc-icon">🪚</div>
           <div class="svc-title">Carpentry</div>
           <p class="svc-desc">Custom furniture, modular work, and repairs. Built to last with quality wood and fittings.</p>
@@ -551,8 +711,9 @@
             <li>False Ceiling Frames</li>
             <li>Wooden Repair Work</li>
           </ul>
+          <div class="svc-cta-hint">Book this service →</div>
         </div>
-        <div class="service-card">
+        <div class="service-card" onclick="bookService('Tiles Fitting')" style="cursor:pointer;">
           <div class="svc-icon">🪟</div>
           <div class="svc-title">Tiles Fitting</div>
           <p class="svc-desc">Floor and wall tiles fitted with precision. Bathroom, kitchen, balcony — anywhere you need.</p>
@@ -563,8 +724,9 @@
             <li>Tile Grouting & Finishing</li>
             <li>Old Tile Replacement</li>
           </ul>
+          <div class="svc-cta-hint">Book this service →</div>
         </div>
-        <div class="service-card">
+        <div class="service-card" onclick="bookService('Electrical')" style="cursor:pointer;">
           <div class="svc-icon">⚡</div>
           <div class="svc-title">Electrical Work</div>
           <p class="svc-desc">Safe, certified electrical services for homes and offices. New wiring to appliance installations.</p>
@@ -575,6 +737,20 @@
             <li>MCB / DB Box Work</li>
             <li>AC & Geyser Point</li>
           </ul>
+          <div class="svc-cta-hint">Book this service →</div>
+        </div>
+        <div class="service-card" onclick="bookService('POP Ceiling')" style="cursor:pointer;">
+          <div class="svc-icon">🏛️</div>
+          <div class="svc-title">POP Ceiling</div>
+          <p class="svc-desc">POP and gypsum false ceiling design and installation. Clean lines, modern look, mess-free work.</p>
+          <ul class="svc-list">
+            <li>POP False Ceiling</li>
+            <li>Gypsum Board Ceiling</li>
+            <li>Ceiling Design & Cornice</li>
+            <li>POP Punning & Repair</li>
+            <li>Office & Showroom Ceiling</li>
+          </ul>
+          <div class="svc-cta-hint">Book this service →</div>
         </div>
       </div>
       <div style="text-align:center;margin-top:36px;">
@@ -616,22 +792,22 @@
         <div class="why-visual">
           <div class="why-icon-big">🏠</div>
           <h3 style="font-family:var(--font-display);font-size:1.8rem;margin-bottom:12px;">Vinay Tiwari</h3>
-          <p style="color:rgba(255,255,255,0.7);margin-bottom:24px;">Master craftsman with 20+ years serving Mumbai homes with honesty and skill.</p>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-            <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:20px;">
+          <p style="color:rgba(255,255,255,0.85);margin-bottom:24px;">Master craftsman with 20+ years serving Mumbai homes with honesty and skill.</p>
+          <div class="why-badge-row">
+            <div class="why-badge">
               <div style="font-size:2rem;font-weight:800;font-family:var(--font-display);">500+</div>
-              <div style="font-size:0.8rem;opacity:0.7;margin-top:4px;">Happy Customers</div>
+              <div style="font-size:0.8rem;opacity:0.85;margin-top:4px;">Happy Customers</div>
             </div>
-            <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:20px;">
+            <div class="why-badge">
               <div style="font-size:2rem;font-weight:800;font-family:var(--font-display);">20+</div>
-              <div style="font-size:0.8rem;opacity:0.7;margin-top:4px;">Years Experience</div>
+              <div style="font-size:0.8rem;opacity:0.85;margin-top:4px;">Years Experience</div>
             </div>
           </div>
           <div style="margin-top:20px;">
-            <div style="font-size:0.82rem;opacity:0.6;margin-bottom:8px;">LANGUAGES</div>
+            <div style="font-size:0.82rem;opacity:0.7;margin-bottom:8px;">LANGUAGES</div>
             <div style="display:flex;gap:8px;justify-content:center;">
-              <span style="background:rgba(255,255,255,0.15);padding:5px 14px;border-radius:20px;font-size:0.85rem;">Hindi</span>
-              <span style="background:rgba(255,255,255,0.15);padding:5px 14px;border-radius:20px;font-size:0.85rem;">English</span>
+              <span style="background:rgba(255,255,255,0.18);padding:5px 14px;border-radius:20px;font-size:0.85rem;">Hindi</span>
+              <span style="background:rgba(255,255,255,0.18);padding:5px 14px;border-radius:20px;font-size:0.85rem;">English</span>
             </div>
           </div>
         </div>
@@ -640,26 +816,52 @@
   </section>
 
   <!-- Work Showcase -->
-  <section class="section">
+  <section class="section work-showcase-section">
     <div class="container">
       <div class="section-label">Our Work</div>
       <h2 class="section-title">Work That Speaks for Itself</h2>
-      <p class="section-sub">Every project is handled with care. Photos coming soon — fresh from real client sites.</p>
+      <p class="section-sub">A glimpse of the kind of work we do. Real project photos are added regularly.</p>
       <div class="work-grid" id="work-gallery">
         {% if photos %}
           {% for photo in photos %}
-          <div class="work-item" style="border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;">
-            <img src="{{ photo.image.url }}" alt="{{ photo.title }}" style="width:100%;height:100%;object-fit:cover;" />
+          <div class="work-item">
+            <img src="{{ photo.image.url }}" alt="{{ photo.title }}" />
+            <div class="work-item-tag">{{ photo.title }}</div>
           </div>
           {% endfor %}
         {% else %}
-        <div class="img-placeholder work-item" data-label="Interior Painting – Vasai">🎨</div>
-        <div class="img-placeholder work-item" data-label="Kitchen Tiles – Virar">🪟</div>
-        <div class="img-placeholder work-item" data-label="Modular Wardrobe – Nalasopara">🪚</div>
-        <div class="img-placeholder work-item" data-label="Electrical Wiring – Vasai">⚡</div>
-        <div class="img-placeholder work-item" data-label="Texture Paint – Mumbai">🏠</div>
-        <div class="img-placeholder work-item" data-label="Bathroom Tiles – Mira Road">🛁</div>
+        <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=700&q=80&auto=format&fit=crop')">
+          <div class="work-item-tag">🎨 Interior Painting</div>
+        </div>
+        <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80&auto=format&fit=crop')">
+          <div class="work-item-tag">🪟 Tiles Fitting</div>
+        </div>
+        <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1601058268499-e52658b8bb88?w=700&q=80&auto=format&fit=crop')">
+          <div class="work-item-tag">🪚 Carpentry Work</div>
+        </div>
+        <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1565608438257-fac3c27beb36?w=700&q=80&auto=format&fit=crop')">
+          <div class="work-item-tag">⚡ Electrical Wiring</div>
+        </div>
+        <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1556909212-d5b65c12fa3a?w=700&q=80&auto=format&fit=crop')">
+          <div class="work-item-tag">🏛️ POP False Ceiling</div>
+        </div>
+        <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1620626011761-996317b8d101?w=700&q=80&auto=format&fit=crop')">
+          <div class="work-item-tag">🛁 Bathroom Renovation</div>
+        </div>
         {% endif %}
+      </div>
+      <p style="text-align:center;color:var(--gray);font-size:0.85rem;margin-top:20px;">📸 Sample images shown above — Vinay's own completed project photos are added regularly via the admin panel.</p>
+    </div>
+  </section>
+
+  <!-- Submit Your Work Photo (Customer Upload Prompt) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="upload-cta-card">
+        <div class="upload-cta-icon">📷</div>
+        <h3>Got a Finished Project With Us?</h3>
+        <p>If we've worked on your home, we'd love to feature it! Share your photos with us on WhatsApp and we'll add them to our gallery (with your permission).</p>
+        <a class="btn btn-primary" href="https://wa.me/919503833197?text=Hi%2C%20I%20want%20to%20share%20photos%20of%20the%20work%20VTHomeFix%20did%20at%20my%20home." target="_blank">📤 Send Photos on WhatsApp</a>
       </div>
     </div>
   </section>
@@ -718,6 +920,9 @@
           </div>
         </div>
       </div>
+      <div style="text-align:center;margin-top:36px;">
+        <button class="btn btn-secondary" onclick="showPage('reviews')">✍️ Write a Review</button>
+      </div>
     </div>
   </section>
 
@@ -759,7 +964,7 @@
   <section class="section">
     <div class="container">
       <div class="services-grid">
-        <div class="service-card">
+        <div class="service-card" onclick="bookService('Painting')" style="cursor:pointer;">
           <div class="svc-icon">🎨</div>
           <div class="svc-title">Painting Services</div>
           <p class="svc-desc">20+ years of painting experience. We use premium branded paints for lasting finish.</p>
@@ -774,7 +979,7 @@
           </ul>
           <div style="margin-top:18px;"><span class="badge badge-accent">Starts ₹12/sq.ft</span></div>
         </div>
-        <div class="service-card">
+        <div class="service-card" onclick="bookService('Carpentry')" style="cursor:pointer;">
           <div class="svc-icon">🪚</div>
           <div class="svc-title">Carpentry</div>
           <p class="svc-desc">Custom woodwork built with quality materials. From repairs to full modular setups.</p>
@@ -789,7 +994,7 @@
           </ul>
           <div style="margin-top:18px;"><span class="badge badge-accent">Free Site Visit</span></div>
         </div>
-        <div class="service-card">
+        <div class="service-card" onclick="bookService('Tiles Fitting')" style="cursor:pointer;">
           <div class="svc-icon">🪟</div>
           <div class="svc-title">Tiles Fitting</div>
           <p class="svc-desc">Precision tile laying for floors, walls, and outdoor areas. Perfect finish every time.</p>
@@ -804,7 +1009,7 @@
           </ul>
           <div style="margin-top:18px;"><span class="badge badge-accent">Starts ₹25/sq.ft</span></div>
         </div>
-        <div class="service-card">
+        <div class="service-card" onclick="bookService('Electrical')" style="cursor:pointer;">
           <div class="svc-icon">⚡</div>
           <div class="svc-title">Electrical Work</div>
           <p class="svc-desc">Safe, code-compliant electrical services. No shortcuts — your family's safety first.</p>
@@ -818,6 +1023,21 @@
             <li>Short Circuit Repair</li>
           </ul>
           <div style="margin-top:18px;"><span class="badge badge-accent">Free Inspection</span></div>
+        </div>
+        <div class="service-card" onclick="bookService('POP Ceiling')" style="cursor:pointer;">
+          <div class="svc-icon">🏛️</div>
+          <div class="svc-title">POP Ceiling</div>
+          <p class="svc-desc">POP and gypsum false ceiling work for homes, offices, and showrooms. Modern designs, clean finish.</p>
+          <ul class="svc-list">
+            <li>POP False Ceiling Installation</li>
+            <li>Gypsum Board False Ceiling</li>
+            <li>Ceiling Design & Cornice Work</li>
+            <li>POP Punning & Wall Finish</li>
+            <li>Office / Showroom Ceiling</li>
+            <li>Ceiling Repair & Touch-up</li>
+            <li>LED Cove Lighting Ceiling</li>
+          </ul>
+          <div style="margin-top:18px;"><span class="badge badge-accent">Starts ₹55/sq.ft</span></div>
         </div>
       </div>
       <div style="text-align:center;margin-top:48px;padding:40px;background:var(--offwhite);border-radius:var(--radius-lg);">
@@ -860,6 +1080,7 @@
               <div class="svc-option" onclick="toggleSvc(this,'Carpentry')"><div class="icon">🪚</div><div class="name">Carpentry</div></div>
               <div class="svc-option" onclick="toggleSvc(this,'Tiles Fitting')"><div class="icon">🪟</div><div class="name">Tiles Fitting</div></div>
               <div class="svc-option" onclick="toggleSvc(this,'Electrical')"><div class="icon">⚡</div><div class="name">Electrical</div></div>
+              <div class="svc-option" onclick="toggleSvc(this,'POP Ceiling')"><div class="icon">🏛️</div><div class="name">POP Ceiling</div></div>
             </div>
             <div class="booking-nav">
               <div></div>
@@ -999,6 +1220,7 @@
                   <option>Carpentry</option>
                   <option>Tiles Fitting</option>
                   <option>Electrical Work</option>
+                  <option>POP Ceiling</option>
                   <option>Multiple Services</option>
                   <option>Other / General Enquiry</option>
                 </select>
@@ -1078,6 +1300,7 @@
                     <option value="carpentry">Carpentry</option>
                     <option value="tiles">Tiles Fitting</option>
                     <option value="electrical">Electrical</option>
+                    <option value="pop_ceiling">POP Ceiling</option>
                     <option value="plumbing">Plumbing</option>
                     <option value="other">Other</option>
                   </select>
@@ -1102,6 +1325,73 @@
               <h3>Application Received!</h3>
               <p>Thank you for your interest. We will contact you soon if there's a fit.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== REVIEWS PAGE ===== -->
+<div id="page-reviews" class="page">
+  <div class="page-hero">
+    <h1>Customer Reviews</h1>
+    <p>See what our customers say — or share your own experience</p>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="form-card">
+            <h3>Share Your Experience</h3>
+            <div id="review-form">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" id="r-name" placeholder="Full Name" />
+              </div>
+              <div class="form-group">
+                <label>Area / Location (Optional)</label>
+                <input type="text" id="r-location" placeholder="e.g. Vasai West" />
+              </div>
+              <div class="form-group">
+                <label>Service Used (Optional)</label>
+                <select id="r-service">
+                  <option value="">Select a service</option>
+                  <option>Painting</option>
+                  <option>Carpentry</option>
+                  <option>Tiles Fitting</option>
+                  <option>Electrical Work</option>
+                  <option>POP Ceiling</option>
+                  <option>Multiple Services</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Your Rating *</label>
+                <div class="star-picker" id="star-picker">
+                  <span class="star-pick" data-val="1">★</span>
+                  <span class="star-pick" data-val="2">★</span>
+                  <span class="star-pick" data-val="3">★</span>
+                  <span class="star-pick" data-val="4">★</span>
+                  <span class="star-pick" data-val="5">★</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Your Review *</label>
+                <textarea id="r-text" placeholder="Tell us about your experience..."></textarea>
+              </div>
+              <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="submitReview()">Submit Review ⭐</button>
+            </div>
+            <div class="form-success" id="review-success">
+              <div class="checkmark">✅</div>
+              <h3>Thank You!</h3>
+              <p>Your review has been submitted and will appear after a quick check.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-family:var(--font-display);color:var(--navy);font-size:1.3rem;margin-bottom:16px;">What Customers Say</h3>
+          <div class="reviews-grid" id="live-reviews-grid" style="grid-template-columns:1fr;margin-top:0;">
+            <p style="color:var(--gray);font-size:0.9rem;">Loading reviews…</p>
           </div>
         </div>
       </div>
@@ -1146,6 +1436,7 @@
           <li><a onclick="showPage('booking')">Book a Service</a></li>
           <li><a onclick="showPage('contact')">Contact Us</a></li>
           <li><a onclick="showPage('join-team')">Join Our Team</a></li>
+          <li><a onclick="showPage('reviews')">Reviews</a></li>
           <li><a href="/django-admin/">Admin Login</a></li>
         </ul>
         <h4 style="margin-top:20px;">Service Areas</h4>
@@ -1234,15 +1525,68 @@ function showPage(pg) {
   if(navEl) navEl.classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
   document.getElementById('nav-links').classList.remove('mobile-open');
+  if (pg === 'reviews') { loadLiveReviews(); }
 }
 
 function toggleMobileMenu() {
   document.getElementById('nav-links').classList.toggle('mobile-open');
 }
 
+/* ===== HERO IMAGE CAROUSEL ===== */
+(function initHeroCarousel() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dotsWrap = document.getElementById('hero-dots');
+  if (!slides.length || !dotsWrap) return;
+
+  let current = 0;
+  const total = slides.length;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'hero-dot-btn' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    dot.onclick = () => goToSlide(i);
+    dotsWrap.appendChild(dot);
+  });
+  const dotEls = dotsWrap.querySelectorAll('.hero-dot-btn');
+
+  function goToSlide(i) {
+    slides[current].classList.remove('active');
+    dotEls[current].classList.remove('active');
+    current = i;
+    slides[current].classList.add('active');
+    dotEls[current].classList.add('active');
+  }
+
+  function nextSlide() { goToSlide((current + 1) % total); }
+
+  let timer = setInterval(nextSlide, 4000);
+  const banner = document.getElementById('hero-banner');
+  if (banner) {
+    banner.addEventListener('mouseenter', () => clearInterval(timer));
+    banner.addEventListener('mouseleave', () => { timer = setInterval(nextSlide, 4000); });
+  }
+})();
+
 /* ===== BOOKING LOGIC ===== */
 let selectedServices = [];
 let currentBookingStep = 1;
+
+function bookService(serviceName) {
+  showPage('booking');
+  // Reset to step 1 every time, so a previous half-filled booking doesn't block this one
+  gotoBookingStep(1);
+  setTimeout(() => {
+    document.querySelectorAll('.svc-option').forEach(el => {
+      const isMatch = el.querySelector('.name').textContent.trim() === serviceName;
+      const isSelected = el.classList.contains('selected');
+      if (isMatch && !isSelected) {
+        el.click(); // only click if not already selected, so we never accidentally deselect
+      }
+    });
+  }, 50);
+}
 
 function toggleSvc(el, name) {
   el.classList.toggle('selected');
@@ -1361,6 +1705,71 @@ async function submitJoinTeam() {
   document.getElementById('join-team-success').style.display='block';
 }
 
+/* ===== CUSTOMER REVIEWS ===== */
+let selectedRating = 5;
+
+(function initStarPicker() {
+  document.addEventListener('click', function(e) {
+    if (!e.target.classList.contains('star-pick')) return;
+    selectedRating = parseInt(e.target.dataset.val, 10);
+    document.querySelectorAll('.star-pick').forEach(s => {
+      s.classList.toggle('active', parseInt(s.dataset.val, 10) <= selectedRating);
+    });
+  });
+  // Default: all 5 stars active
+  const picker = document.getElementById('star-picker');
+  if (picker) {
+    picker.querySelectorAll('.star-pick').forEach(s => s.classList.add('active'));
+  }
+})();
+
+async function submitReview() {
+  const name = document.getElementById('r-name').value.trim();
+  const text = document.getElementById('r-text').value.trim();
+  if(!name||!text) { alert('Please add your name and review text.'); return; }
+
+  const entry = {
+    name,
+    location: document.getElementById('r-location').value.trim(),
+    service: document.getElementById('r-service').value,
+    rating: selectedRating,
+    reviewText: text
+  };
+  try {
+    const result = await apiPost('/api/reviews/', entry);
+    if (!result.success) throw new Error(result.error || 'Failed');
+  } catch (e) {
+    DB.push('reviews', entry);
+  }
+  document.getElementById('review-form').style.display='none';
+  document.getElementById('review-success').style.display='block';
+}
+
+async function loadLiveReviews() {
+  const grid = document.getElementById('live-reviews-grid');
+  if (!grid) return;
+  try {
+    const resp = await fetch('/api/reviews/list/');
+    const result = await resp.json();
+    if (result.success && result.reviews.length) {
+      grid.innerHTML = result.reviews.map(r => `
+        <div class="live-review-card">
+          <div class="stars">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</div>
+          <p class="review-text" style="margin:10px 0;">"${r.text}"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">${r.name.substring(0,2).toUpperCase()}</div>
+            <div><div class="reviewer-name">${r.name}</div><div class="reviewer-loc">${r.location || ''}${r.service ? ' · '+r.service : ''}</div></div>
+          </div>
+        </div>
+      `).join('');
+    } else {
+      grid.innerHTML = '<p style="color:var(--gray);font-size:0.9rem;">Be the first to leave a review!</p>';
+    }
+  } catch(e) {
+    grid.innerHTML = '<p style="color:var(--gray);font-size:0.9rem;">Reviews will appear here soon.</p>';
+  }
+}
+
 /* ===== GALLERY (loaded from Django backend via template context) ===== */
 function syncGallery(photos) {
   const grid = document.getElementById('work-gallery');
@@ -1444,6 +1853,15 @@ SERVICES OFFERED:
    - Geyser/water heater point
    - Short circuit repair
 
+5. POP CEILING (starts ₹55/sq.ft):
+   - POP false ceiling installation
+   - Gypsum board false ceiling
+   - Ceiling design and cornice work
+   - POP punning and wall finish
+   - Office and showroom ceiling
+   - Ceiling repair and touch-up
+   - LED cove lighting ceiling
+
 SERVICE AREAS: Vasai (main base), Virar, Nalasopara, Mira Road, Bhayandar, Naigaon, Borivali, Kandivali, Malad, Andheri, Dadar — covering the full Western Line of Mumbai from Virar to Borivali and beyond.
 
 HIRING / JOIN OUR TEAM:
@@ -1515,18 +1933,8 @@ async function sendChat(overrideText) {
   chatHistory.push({role:'user', content: text});
   const ti = addBotMsg('', true);
   try {
-    const resp = await fetch('https://api.anthropic.com/v1/messages', {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 400,
-        system: BUSINESS_CONTEXT,
-        messages: chatHistory.slice(-10)
-      })
-    });
-    const data = await resp.json();
-    const reply = data.content?.[0]?.text || "Sorry, I couldn't understand that. Please call us at 9503833197!";
+    const result = await apiPost('/api/chat/', { messages: chatHistory.slice(-10) });
+    const reply = result.reply || "Sorry, I couldn't understand that. Please call us at 9503833197!";
     chatHistory.push({role:'assistant', content: reply});
     const ind = document.getElementById('typing-ind');
     if(ind) ind.remove();
