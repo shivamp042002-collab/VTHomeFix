@@ -9,12 +9,12 @@
   <meta name="keywords" content="VTHomeFix, painter near me, electrician near me, carpenter near me, contractor near me, home fix near me, home repair near me, tiles fitting near me, handyman near me, POP false ceiling near me, false ceiling contractor near me, gypsum ceiling near me, POP ceiling design, painting services vasai, painting services virar, carpenter vasai, carpenter virar, tiles fitting mumbai, electrician vasai, electrician virar, contractor vasai, contractor virar, POP ceiling vasai, POP ceiling virar, false ceiling mumbai, home renovation vasai virar, painter borivali, electrician borivali, carpenter borivali, painter mira road, painter bhayandar, painter nalasopara, home services western line mumbai, best painter near me, Vinay Tiwari painter" />
   <meta name="author" content="VTHomeFix" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.vthomefix.in/" />
+  <link rel="canonical" href="https://vthomefix.com/" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VTHomeFix – Home Services Vasai, Virar, Borivali, Mumbai" />
   <meta property="og:description" content="Professional painting, carpentry, tiles fitting and electrical services. 20+ years experience. Serving Vasai, Virar, Nalasopara, Mira Road, Bhayandar and Borivali." />
-  <meta property="og:url" content="https://www.vthomefix.in/" />
+  <meta property="og:url" content="https://vthomefix.com/" />
   <!-- Schema Markup for Local SEO -->
   <script type="application/ld+json">
   {
@@ -22,11 +22,11 @@
     "@type": "HomeAndConstructionBusiness",
     "name": "VTHomeFix",
     "alternateName": "VTHomeFix by Vinay Tiwari",
-    "image": "https://www.vthomefix.in/static/logo.png",
+    "image": "https://vthomefix.com/static/logo.png",
     "description": "VTHomeFix is your trusted painter, electrician, carpenter and contractor near Vasai, Virar, Nalasopara, Mira Road, Bhayandar and Borivali, Mumbai. Offering painting, carpentry, tiles fitting and electrical services with 20+ years of experience.",
     "telephone": "+919503833197",
     "email": "Vinaytiwari59352@gmail.com",
-    "url": "https://www.vthomefix.in/",
+    "url": "https://vthomefix.com/",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Vasai",
@@ -476,6 +476,8 @@
     .work-item {
       border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/3; position: relative;
       background-size: cover; background-position: center;
+      background-color: var(--lightgray);
+      background-image: linear-gradient(135deg, #e8edf4, #d0daea);
       box-shadow: 0 6px 20px rgba(11,31,58,0.1); transition: all var(--transition);
     }
     .work-item:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 12px 32px rgba(11,31,58,0.18); }
@@ -842,7 +844,7 @@
         <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1565608438257-fac3c27beb36?w=700&q=80&auto=format&fit=crop')">
           <div class="work-item-tag">⚡ Electrical Wiring</div>
         </div>
-        <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1556909212-d5b65c12fa3a?w=700&q=80&auto=format&fit=crop')">
+        <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1615873968403-89e068629265?w=700&q=80&auto=format&fit=crop')">
           <div class="work-item-tag">🏛️ POP False Ceiling</div>
         </div>
         <div class="work-item" style="background-image:url('https://images.unsplash.com/photo-1620626011761-996317b8d101?w=700&q=80&auto=format&fit=crop')">
@@ -1575,16 +1577,19 @@ let currentBookingStep = 1;
 
 function bookService(serviceName) {
   showPage('booking');
-  // Reset to step 1 every time, so a previous half-filled booking doesn't block this one
-  gotoBookingStep(1);
+  // Select the service first, then jump straight to the details form (step 2)
+  // since clicking a specific service already tells us what they want.
   setTimeout(() => {
     document.querySelectorAll('.svc-option').forEach(el => {
       const isMatch = el.querySelector('.name').textContent.trim() === serviceName;
       const isSelected = el.classList.contains('selected');
       if (isMatch && !isSelected) {
         el.click(); // only click if not already selected, so we never accidentally deselect
+      } else if (!isMatch && isSelected) {
+        el.click(); // deselect any other previously-selected service for a clean single-service booking
       }
     });
+    gotoBookingStep(2);
   }, 50);
 }
 
